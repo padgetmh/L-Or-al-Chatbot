@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>L'Oréal Smart Product Advisor</title>
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Material Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!-- Markdown renderer -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="page-wrapper">
+      <!-- =========================
+            HEADER
+      ========================== -->
+
+      <header class="site-header">
+        <!-- Replace with your logo image -->
+        <img src="img/loreal-logo.png" alt="L'Oréal Logo" class="logo" />
+
+        <h1>L'Oréal Smart Product Advisor</h1>
+
+        <p class="tagline">Personalized beauty recommendations powered by AI</p>
+      </header>
+
+      <!-- =========================
+            CHATBOT
+      ========================== -->
+
+      <main>
+        <section class="chat-container">
+          <div class="ai-brand">
+            <div class="ai-logo">✨</div>
+            <div class="ai-brand-text">
+              <span>Beauty AI Assistant</span>
+              <span class="status">● Online</span>
+            </div>
+          </div>
+
+          <div class="mode-buttons" aria-label="Beauty chat modes">
+            <button
+              type="button"
+              class="mode-button"
+              data-prompt="Help me build a simple skincare routine for my skin goals."
+            >
+              🧴 Skincare Mode
+            </button>
+
+            <button
+              type="button"
+              class="mode-button"
+              data-prompt="Give me a beginner-friendly makeup look with product tips."
+            >
+              💄 Makeup Mode
+            </button>
+
+            <button
+              type="button"
+              class="mode-button"
+              data-prompt="Share quick glow up beauty tips I can start today."
+            >
+              ✨ Glow Up Tips
+            </button>
+          </div>
+
+          <!-- Current Question -->
+          <div id="currentQuestion" class="current-question">
+            Ask a question about L'Oréal products...
+          </div>
+
+          <!-- Chat Messages -->
+          <div id="chatWindow" class="chat-window"></div>
+
+          <!-- Typing Indicator -->
+          <div id="typingIndicator" class="typing-indicator hidden">
+            Assistant is typing...
+          </div>
+
+          <!-- Chat Form -->
+          <form id="chatForm" class="chat-form">
+            <label for="userInput" class="visually-hidden"> Message </label>
+
+            <input
+              id="userInput"
+              type="text"
+              name="userInput"
+              placeholder="Ask about skincare, makeup, haircare, or routines..."
+              autocomplete="off"
+              required
+            />
+
+            <button id="sendBtn" type="submit">
+              <span class="material-icons"> send </span>
+            </button>
+          </form>
+        </section>
+      </main>
+
+      <!-- =========================
+            FOOTER
+      ========================== -->
+
+      <footer class="site-footer">
+        <p>© 2026 L'Oréal Smart Product Advisor</p>
+
+        <nav>
+          <a href="#"> Privacy Policy </a>
+
+          <a href="#"> Terms of Use </a>
+
+          <a href="#"> Contact </a>
+        </nav>
+      </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
