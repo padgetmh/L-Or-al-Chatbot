@@ -44,7 +44,12 @@
 
 body {
   font-family: "Montserrat", Arial, sans-serif;
-  background: #000000;
+  background-image: url("img/L'Oreal Background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #000000;
   color: var(--black);
   min-height: 100vh;
   display: flex;
@@ -58,7 +63,7 @@ body {
 .page-wrapper {
   width: 100%;
   max-width: 900px;
-  background: var(--white);
+  background: var(--gold);
   border-radius: 20px;
   overflow: hidden;
   border: 1px solid rgba(0, 0, 0, 0.08);
@@ -87,11 +92,11 @@ body {
   font-weight: 700;
   letter-spacing: 1px;
   margin-bottom: 12px;
-  color: var(--black);
+  color: #ff003b;
 }
 
 .tagline {
-  color: #333333;
+  color: #fff3f6;
   font-size: 1rem;
   font-weight: 500;
 }
@@ -99,9 +104,9 @@ body {
 /* ---------- CHAT CONTAINER ---------- */
 
 .chat-container {
-  border: 3px solid var(--gold);
+  border: 3px solid #e3a535;
   border-radius: 25px;
-  background: var(--white);
+  background: linear-gradient(180deg, #fff3f6 0%, #ffd6de 100%);
   box-shadow: 0 10px 30px rgba(227, 165, 53, 0.25);
   padding: 30px;
 }
@@ -190,7 +195,7 @@ body {
 .chat-window {
   height: 500px;
   overflow-y: auto;
-  background: linear-gradient(135deg, #ffffff, #f7e3b2);
+  background: linear-gradient(135deg, #fff3f6 0%, var(--soft-red) 100%);
   border: 2px solid rgba(227, 165, 53, 0.32);
   border-radius: 16px;
   padding: 25px;
@@ -621,7 +626,7 @@ button:hover {
   color: var(--black);
   text-align: center;
   padding: 25px;
-  border-top: 3px solid var(--black);
+  border-top: 3px solid var(--gold);
 }
 
 .site-footer nav {
