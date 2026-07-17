@@ -44,12 +44,77 @@
 
 body {
   font-family: "Montserrat", Arial, sans-serif;
-  background-image: url("img/L'Oreal Background.png");
+  /* Concentric gold rings on a black canvas, inspired by the reference background */
+  background-color: #050505;
+  background-image:
+    radial-gradient(
+      circle at center,
+      transparent 0,
+      transparent 34px,
+      rgba(232, 175, 74, 0.9) 35px,
+      transparent 37px,
+      transparent 74px,
+      rgba(232, 175, 74, 0.88) 75px,
+      transparent 77px,
+      transparent 114px,
+      rgba(232, 175, 74, 0.86) 115px,
+      transparent 117px,
+      transparent 154px,
+      rgba(232, 175, 74, 0.84) 155px,
+      transparent 157px,
+      transparent 194px,
+      rgba(232, 175, 74, 0.82) 195px,
+      transparent 197px,
+      transparent 234px,
+      rgba(232, 175, 74, 0.8) 235px,
+      transparent 237px,
+      transparent 274px,
+      rgba(232, 175, 74, 0.78) 275px,
+      transparent 277px,
+      transparent 314px,
+      rgba(232, 175, 74, 0.76) 315px,
+      transparent 317px,
+      transparent 354px,
+      rgba(232, 175, 74, 0.74) 355px,
+      transparent 357px,
+      transparent 394px,
+      rgba(232, 175, 74, 0.72) 395px,
+      transparent 397px,
+      transparent 434px,
+      rgba(232, 175, 74, 0.7) 435px,
+      transparent 437px,
+      transparent 474px,
+      rgba(232, 175, 74, 0.68) 475px,
+      transparent 477px,
+      transparent 514px,
+      rgba(232, 175, 74, 0.66) 515px,
+      transparent 517px,
+      transparent 554px,
+      rgba(232, 175, 74, 0.64) 555px,
+      transparent 557px,
+      transparent 594px,
+      rgba(232, 175, 74, 0.62) 595px,
+      transparent 597px,
+      transparent 634px,
+      rgba(232, 175, 74, 0.6) 635px,
+      transparent 637px,
+      transparent 674px,
+      rgba(232, 175, 74, 0.58) 675px,
+      transparent 677px,
+      transparent 714px,
+      rgba(232, 175, 74, 0.56) 715px,
+      transparent 717px,
+      transparent 754px,
+      rgba(232, 175, 74, 0.54) 755px,
+      transparent 757px,
+      transparent 794px,
+      rgba(232, 175, 74, 0.52) 795px,
+      transparent 797px
+    );
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-color: #000000;
   color: var(--black);
   min-height: 100vh;
   display: flex;
